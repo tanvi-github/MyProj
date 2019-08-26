@@ -1,0 +1,10 @@
+{% extends "MyApp/base.html" %}
+<div id="hello">
+{%block content%}
+<form  method="post">
+     {% csrf_token %}
+     {{form.as_p}}
+    <input type="submit"  value = "Submit" action="thanks.html">
+   </form>
+    {%endblock%}
+  </div>
